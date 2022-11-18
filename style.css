@@ -34,7 +34,7 @@ h2 {
 
 p {
     font-size: 0.75rem;
-    line-height: 1.7
+    line-height: 1.7;
 }
 
 a {
@@ -52,8 +52,8 @@ a {
 
 }
 
-header {
-    padding: .25em 0;
+header, 
+.blogs {
     background: #F5F5F5;
 }
 
@@ -85,11 +85,13 @@ li:last-child {
     font-size: .9rem;
     font-weight: 700;
     color: #252525;
+    margin-left: 1em;
 }
 
 .nav-links {
     color: #252525;
     font-weight: 700;
+    margin-right: 1em;
 }
 
 /* Main */
@@ -106,7 +108,6 @@ main {
     padding-top: 7em;
     padding-bottom: 5em;
     color: #F5F5F5;
-    /* background: #123456; */
 }
 
 .main-title,
@@ -131,11 +132,12 @@ main {
 /* Blogs */
 
 .blog-items {
-    padding: 3em .5em;
+    padding: 2em 0;
 }
 
 .blog {
     margin-bottom: 2.5em;
+    min-width: 200px;
 }
 
 .blog:last-child {
@@ -152,7 +154,10 @@ main {
 }
 
 .blog-img {
-    border-radius: 7.5px;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .blog-date {
@@ -160,4 +165,31 @@ main {
     font-weight: bold;
     text-transform: uppercase;
     color: #555555;
+}
+
+@media (min-width: 768px) {
+    .blog-items {
+        /* background: blue; */
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .blog {
+        width: 32%;
+    }
+
+    .nav-title {
+        margin-left: 3em;
+    }
+
+    .nav-links {
+        margin-right: 3em;
+    }
+
+    .blog-img {
+        height: 175px;
+    }
+
 }
