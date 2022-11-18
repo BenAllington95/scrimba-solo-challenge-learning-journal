@@ -11,11 +11,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* Typography */
 
 h1,
 span,
-p {
+p,
+h2 {
     margin: 0;
 }
 
@@ -23,8 +28,13 @@ h1 {
     font-size: 1.75rem;
 }
 
+h2 {
+    font-size: 1.25rem;
+}
+
 p {
     font-size: 0.75rem;
+    line-height: 1.7
 }
 
 a {
@@ -74,6 +84,7 @@ li:last-child {
 .nav-title {
     font-size: .9rem;
     font-weight: 700;
+    color: #252525;
 }
 
 .nav-links {
@@ -88,6 +99,7 @@ main {
     background-image: url('img/avi-richards-Z3ownETsdNQ-unsplash.jpg');
     background-position: center;
     background-size: cover;
+    background-blend-mode:color-dodge;
 }
 
 .main-items {
@@ -112,10 +124,40 @@ main {
     margin-bottom: 0.25em;
 }
 
-.main-body {
-    line-height: 1.7;
-}
-
 .main-date {
     font-size: 0.75rem;
+}
+
+/* Blogs */
+
+.blog-items {
+    padding: 3em .5em;
+}
+
+.blog {
+    margin-bottom: 2.5em;
+}
+
+.blog:last-child {
+    margin-bottom: 0;
+}
+
+.blog-body,
+.blog-title {
+    color: #252525;
+}
+
+.blog-title {
+    margin: .5em 0;
+}
+
+.blog-img {
+    border-radius: 7.5px;
+}
+
+.blog-date {
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #555555;
 }
