@@ -13,6 +13,19 @@ body {
 
 /* Typography */
 
+h1,
+span,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+p {
+    font-size: 0.75rem;
+}
 
 a {
     font-size: .75rem;
@@ -31,7 +44,6 @@ a {
 
 header {
     padding: .25em 0;
-    /* border-bottom: 2px solid #252525; */
     background: #F5F5F5;
 }
 
@@ -70,3 +82,40 @@ li:last-child {
 }
 
 /* Main */
+
+main {
+    background: #252525;
+    background-image: url('img/avi-richards-Z3ownETsdNQ-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.main-items {
+    padding-top: 7em;
+    padding-bottom: 5em;
+    color: #F5F5F5;
+    /* background: #123456; */
+}
+
+.main-title,
+.main-body {
+    max-width: 500px;
+}
+
+.main-title,
+.main-body,
+.main-date {
+    text-shadow: 0 1px #555555;
+}
+
+.main-title {
+    margin-bottom: 0.25em;
+}
+
+.main-body {
+    line-height: 1.7;
+}
+
+.main-date {
+    font-size: 0.75rem;
+}
