@@ -136,8 +136,8 @@ main {
 }
 
 .blog {
-    margin-bottom: 2.5em;
-    min-width: 200px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .blog:last-child {
@@ -167,6 +167,20 @@ main {
     color: #555555;
 }
 
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #252525;
+}
+
+footer p {
+    color: #F5F5F5;
+    opacity: 0.5;
+}
+
 @media (min-width: 768px) {
 
     h1 {
@@ -179,7 +193,6 @@ main {
 
 
     .blog-items {
-        /* background: blue; */
         display: flex;
         justify-content: center;
         gap: 10px;
