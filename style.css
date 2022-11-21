@@ -222,7 +222,6 @@ footer p {
 }
 
 .width {
-    width: 90%;
     margin: 0 auto;
 }
 
@@ -286,6 +285,10 @@ footer p {
 
     .article-main-img {
         height: 350px;
+    }
+
+    .width {
+        width: 90%;
     }
 
 }
