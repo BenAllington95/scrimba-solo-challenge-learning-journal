@@ -33,7 +33,7 @@ h2 {
 }
 
 p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     line-height: 1.7;
 }
 
@@ -180,6 +180,15 @@ footer p {
     color: #F5F5F5;
     opacity: 0.5;
 }
+
+
+ /* Article Main */
+
+ .article-main {
+    margin: 2em 0;
+}
+
+
 
 @media (min-width: 768px) {
 
