@@ -110,9 +110,18 @@ main {
     color: #F5F5F5;
 }
 
+.main-title {
+    color: #F5F5F5;
+}
+
+.main-title:hover {
+    color: orange;
+}
+
 .main-title,
 .main-body {
     max-width: 500px;
+
 }
 
 .main-title,
@@ -186,7 +195,24 @@ footer p {
 
  .article-main {
     margin: 2em 0;
+    color: #252525;
 }
+
+.article-main-body,
+.article-main-body h2,
+.article-main-body p {
+    margin-bottom: 1.5em;
+}
+
+.article-main-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
 
 
 
