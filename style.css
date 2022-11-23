@@ -66,7 +66,6 @@ header,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid lightblue;
 }
 
 
@@ -226,6 +225,7 @@ main {
 .article-main-img,
 .article-main-body h2,
 .article-main-body p,
+.article-main-profile-img,
 .article-main-title-with-flex {
     margin-bottom: 1.5rem;
 }
@@ -238,6 +238,12 @@ main {
     height: 150px;
     width: auto;
     border-radius: 50%;
+}
+
+.article-main-title-with-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
