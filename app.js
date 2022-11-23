@@ -42,11 +42,21 @@ function generateHtmlString () {
     let htmlString = ""
 
     blogs.forEach(function(blog) {
-        htmlString += blog.body
+        htmlString += `
+        <div class="blog">
+            <img class="blog-img"src="${blog.img}" alt="">
+            <span class="blog-date">${blog.date}</span>
+            <h2 class="blog-title">${blog.title}</h2>
+            <p class="blog-body zero-margin-bottom">${blog.body}</p>
+    </div>`
     })
 
     return htmlString
 
 }
 
-console.log(generateHtmlString())
+function render() {
+    document.getElementById('blog-items').innerHTML = generateHtmlString()
+}
+
+render()
